@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="title">BMI GENERATOR</h1>
+    <div id="container">
+
+        <div id="main">
+
+            <div class="result">
+                <span id="bmi">00.00</span>
+                <span id="ident">BMI</span>
+                <span id="level">normal</span>
+
+                <hr style="height: 5px; background-color: black ;border: black;">
+
+                <p id="information">Information</p>
+
+                <br><br>
+
+                <!-- COLOR BAR -->
+
+                <div id="weights">
+                    <span style="color:rgb(1, 179, 249);">Underweight</span>
+                    <span style="color:rgb(154, 255, 3) ;">Normal</span>
+                    <span style="color:rgb(255, 0, 43) ;">Overweight</span>
+                </div>
+                <div id="bar">
+                    <div id="blue"></div>
+                    <div id="green"></div>
+                    <div id="pink"></div>
+                </div>
+                <div id="weights">
+                    <span style="color:rgb(1, 179, 249);">16.0</span>
+                    <span style="color:rgb(1, 179, 249);">18.5</span>
+                    <span style="color:rgb(154, 255, 3) ;">25.0</span>
+                    <span style="color:rgb(255, 0, 43) ;">40.0</span>
+                </div>
+                <!-- ___________________________________________ -->
+                
+                <h3 style="color: white;font-style: italic;margin-top: 50px;margin-left: 5px;">CREATED BY ABHISHEK PATHAK</h3>
+
+            </div>
+
+        </div>
+        <div class="inputs">
+            <span>
+                <label for="height">Enter Your Height in CMs</label>
+                <input type="text" id="height">
+                <label style="color: aliceblue;">Centimeters</label>
+            </span>
+            <span>
+                <label for="height">Enter Your Weight in KGs</label>
+                <input type="text" id="weight">
+                <label style="color: aliceblue;">Kilograms</label>
+            </span>
+
+            <button id="calculate" onclick="generate()">CALCULATE</button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
